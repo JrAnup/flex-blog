@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+}
+  *{
+      box-sizing: border-box; 
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* global mesg */
+.global-msg {
+    background-color: rgba(7, 159, 197, 0.418);
+    color: rgba(59, 58, 58, 0.719) ;
+    line-height: 50px;
+}
+
+.gbl-content {
+    font-family:fantasy;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+ /* header nav-bar section */
+.nav-bar {
+    background-color: rgba(95, 95, 248, 0.301);
+    color: rgba;
+    font-size: 30px;
+    font-family: serif Georgia  ;
+
+}  
+
+.hamburger {
+    display: none;
+}
+.menu{
+    display: block;
+}
+.top-menu {
+    font-size: 20px;
+    font-family: fantasy;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    font-family: fantasy;
+    list-style-type: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 30px;
+}
+
+/* hero section */
+.hero {
+    min-height: 80vh;
+    background: url(img/unsplash.jpg) no-repeat center center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    font-family: fantasy;
+    font-weight: 300;
+    width: 450px;
+    background: rgba(47, 48, 48, 0.445);
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+/* main section */
+.main {
+    display: flex;
+    margin-top: 32px;
+}
+
+.main-content {
+    width: 66%;
+    padding: 1rem;
+}
+
+.art-img{
+    max-width: 450px;
+    margin-top: 60px;
+}
+
+article{
+    display: flex;
+    margin: 32px;
+    box-shadow: -5px 5px 10px 5px rgba(0, 0, 0, 0.432);
+    background: rgba(47, 48, 48, 0.445);
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.title {
+ font-family: fantasy;
+ font-size: 20px;
+ 
+}
+
+.side-links {
+width: 40%;
+
+}
+
+.read-by-country{
+    background:bisque;
+    padding:1rem;
+    border-radius: 5px;
+    box-shadow: -5px 5px 10px 5px rgba(0, 0, 0, 0.432);
+    margin-bottom: 2rem;
+}  
+.read-by-date{
+   
+    background:bisque;
+    padding:1rem;
+    border-radius: 5px;
+    box-shadow: -5px 5px 10px 5px rgba(0, 0, 0, 0.432);
+
+}
+
+h2 {
+    font-family: fantasy;
+}
+/* recc section */
+.recc{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 2rem;
+    background: rgb(230, 248, 198);
+    padding: 20px 0;
+}
+
+
+/* card-list */
+.card-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    margin: 10px 10px 5px 5px;
+    width: minmax(300px, 100px);
+    min-height: 300px;
+    background-color: rgb(161, 192, 161) ;
+    border-radius: 5px;
+    padding-bottom: 1rem;
+    box-shadow: -5px 5px 10px 5px rgba(0, 0, 0, 0.432);
+
+}
+
+.suscribtion{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    background-color: mintcream;
+}
+
+
+
+
+
+/* footer section */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: min-content;
+   
+}
+
+.card img {
+border-radius: 5px 5px 0 0  ;
+}
+
+.btn-card{
+    background-color: dimgray;
+    font-size: 18px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    /* width: 100%; */
+}
+
+
+
+/* media querese */
+@media (max-width: 768px){
+    .hamburger {
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content {
+        width: 100%;
+        /* padding: 1rem; */
+    }
+    .side-links {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex; 
+        justify-content: space-around;
+    }
+    .read-by-country,
+    .read-by-date {
+       width: 40%;
+      
+    } 
+    .card-list{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    
+    nav {
+        height: 65px;
+    }
+    
+}
+
+@media (max-width: 500px){
+    article {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .art-img{
+         width: 100%;
+    }
+
+    .side-links {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex; 
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+
+    .read-by-country,
+    .read-by-date {
+       width: 100%;
+    
+    } 
+    form{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    form input {
+        margin-bottom: 2rem;
+    }
+
+}
+
